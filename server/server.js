@@ -1,11 +1,9 @@
 import express from 'express';
 import cors from 'cors';
 import fs from 'fs';
-// import data from './data.json';
-// console.log(data)
 
 const app = express();
-const port = 8081;
+const port = 8080;
 
 function readFrogs() {
 	const frogsFile = fs.readFileSync("./data/data.json");

@@ -48,11 +48,29 @@ export const MultipleChoice = ({ frogSounds }) => {
         setCorrectAnswer(' ')
     }
 
+    // function correctOrIncorrect() {
+    //     if (correctAnswer === "true") {
+    //         return <h2 className="correct">Correct!</h2>
+    //     } else if (correctAnswer === "false") {
+    //         return <h2 className="incorrect">Incorrect</h2>
+    //     }
+    // }
+
     function correctOrIncorrect() {
         if (correctAnswer === "true") {
-            return <h2 className="correct">Correct!</h2>
+            return (
+                <div className="result">
+                    <img src="../assets/check-icon.svg" className="answer-icon green" />
+                    <h2 className="correct">Correct!</h2>
+                </div>
+            ) 
         } else if (correctAnswer === "false") {
-            return <h2 className="incorrect">Incorrect</h2>
+            return (
+                <div className="result">
+                    <img src="../assets/x-icon.svg" className="answer-icon red" />
+                    <h2 className="incorrect">Incorrect</h2>
+                </div>
+            ) 
         }
     }
 

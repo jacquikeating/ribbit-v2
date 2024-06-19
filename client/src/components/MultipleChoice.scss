@@ -22,11 +22,33 @@ button {
 }
 
 .correct {
-    display: block;
+    display: inline;
     color: green;
 }
 
 .incorrect {
     display: block;
     color: red;
+}
+
+.answer-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.green {
+    filter: invert(25%) sepia(95%) saturate(3169%) hue-rotate(90deg) brightness(95%) contrast(106%);
+}
+
+.red {
+    filter: invert(15%) sepia(100%) saturate(5069%) hue-rotate(357deg) brightness(106%) contrast(116%);
+
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
 }
