@@ -1,0 +1,74 @@
+[
+    {
+        "id": 0,
+        "species": "Cope's Gray Treefrog",
+        "audio": "https://www.umesc.usgs.gov/terrestrial/amphibians/armi/frog_calls/copes_gray_treefrog.mp3",
+        "image": "https://www.umesc.usgs.gov/terrestrial/amphibians/armi/species/copes_gray_tree_frog_440.jpg" 
+    },
+    {
+        "id": 1,
+        "species": "Cricket Frog",
+        "audio": "https://www.umesc.usgs.gov/terrestrial/amphibians/armi/frog_calls/cricket_frog.mp3",
+        "image": "https://www.umesc.usgs.gov/terrestrial/amphibians/armi/species/cricket_frog_440.jpg" 
+    },
+    {
+        "id": 2,
+        "species": "Western Chorus Frog",
+        "audio": "https://www.umesc.usgs.gov/terrestrial/amphibians/armi/frog_calls/chorus_frog.mp3",
+        "image": "https://www.umesc.usgs.gov/terrestrial/amphibians/armi/species/chorus_frog_440.jpg"
+    },
+    {
+        "id": 3,
+        "species": "American Toad",
+        "audio": "https://www.umesc.usgs.gov/terrestrial/amphibians/armi/frog_calls/american_toad.mp3",
+        "image": "https://www.umesc.usgs.gov/terrestrial/amphibians/armi/species/eastern_american_toad_440.jpg"
+    },
+    {
+        "id": 4,
+        "species": "Northern Leopard Frog",
+        "audio": "https://www.umesc.usgs.gov/terrestrial/amphibians/armi/frog_calls/northern_leopard_frog.mp3",
+        "image": "https://www.umesc.usgs.gov/terrestrial/amphibians/armi/species/northern_leopard_frog_440.jpg"
+    },
+    {
+        "id": 5,
+        "species": "Eastern Gray Treefrog",
+        "audio": "https://www.umesc.usgs.gov/terrestrial/amphibians/armi/frog_calls/eastern_gray_treefrog.mp3",
+        "image": "https://www.umesc.usgs.gov/terrestrial/amphibians/armi/species/eastern_gray_tree_frog_440.jpg" 
+    },
+    {
+        "id": 6,
+        "species": "Wood Frog",
+        "audio": "https://www.umesc.usgs.gov/terrestrial/amphibians/armi/frog_calls/woodfrog.mp3",
+        "image": "https://www.umesc.usgs.gov/terrestrial/amphibians/armi/species/wood_frog_440.jpg" 
+    },
+    {
+        "id": 7,
+        "species": "Green Frog",
+        "audio": "https://www.umesc.usgs.gov/terrestrial/amphibians/armi/frog_calls/green_frog.mp3",
+        "image": "https://www.umesc.usgs.gov/terrestrial/amphibians/armi/species/green_frog_440.jpg" 
+    },
+    {
+        "id": 8,
+        "species": "American Bullfrog",
+        "audio": "https://www.umesc.usgs.gov/terrestrial/amphibians/armi/frog_calls/bullfrog.mp3",
+        "image": "https://www.umesc.usgs.gov/terrestrial/amphibians/armi/species/american_bullfrog_440.jpg" 
+    },
+    {
+        "id": 9,
+        "species": "Spring Peeper",
+        "audio": "https://www.umesc.usgs.gov/terrestrial/amphibians/armi/frog_calls/spring_peeper.mp3",
+        "image": "https://www.umesc.usgs.gov/terrestrial/amphibians/armi/species/spring_peeper_440.jpg" 
+    },
+    {
+        "id": 10,
+        "species": "Mink Frog",
+        "audio": "https://www.umesc.usgs.gov/terrestrial/amphibians/armi/frog_calls/mink_frog.mp3",
+        "image": "https://www.umesc.usgs.gov/terrestrial/amphibians/armi/species/mink_frog_440.jpg" 
+    },
+    {
+        "id": 11,
+        "species": "Crazy Frog",
+        "audio": "https://pagalworld.com.mx/wp-content/uploads/2022/09/Crazy-Frog-Axel-F.mp3",
+        "image": "https://static1.thegamerimages.com/wordpress/wp-content/uploads/2023/07/31-two-crazy-frog-racer-games.jpg"
+    }
+]

@@ -1,0 +1,32 @@
+.radio-buttons {
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+}
+
+input {
+    text-align: left;
+    margin: 15px;
+}
+
+button {
+    display: block;
+    margin: 1rem auto;
+    width: 200px;
+    height: 50px;
+    background-color: green;
+}
+
+.hidden {
+    display: none;
+}
+
+.correct {
+    display: block;
+    color: green;
+}
+
+.incorrect {
+    display: block;
+    color: red;
+}

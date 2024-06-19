@@ -1,0 +1,23 @@
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.correct {
+    display: block;
+    color: green;
+}
+
+.incorrect {
+    display: block;
+    color: red;
+}
+
+img {
+    width: 440px;
+    height: 330px;
+    object-fit: cover;
+}
