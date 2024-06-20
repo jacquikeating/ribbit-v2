@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, Suspense, lazy } from 'react'
 import axios from 'axios'
 import './App.css'
-import MultipleChoice from './components/MultipleChoice'
+const MultipleChoice = lazy(() => import("./components/MultipleChoice.jsx"))
 
 function App() {
   const [frogSounds, setFrogSounds] = useState([])
@@ -9,7 +9,7 @@ function App() {
   const getFrogSounds = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:8080/frogs"
+        "http://localhost:8081/frogs"
       )
       setFrogSounds(response.data)
     } catch (error) {
@@ -31,7 +31,9 @@ function App() {
             <p className="subtitle">Test your frog knowledge!</p>
           </div>
         </header>
-        <MultipleChoice frogSounds={frogSounds}/>
+        <Suspense fallback={<p>Loading...</p>}>
+          <MultipleChoice frogSounds={frogSounds} />
+        </Suspense>
       </div>
     </>
   )
