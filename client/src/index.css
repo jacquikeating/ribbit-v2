@@ -28,17 +28,32 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  font-family: 'Poppins';
+}
+
+header {
+  display: flex;
+  gap: 35px;
+  justify-content: center;
+  text-align: left;
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-  margin-bottom: 20px;
-  margin-top: 5px;
+  font-family: 'Paytone One';
+  font-size: 4.1em;
+  line-height: 1;
+  margin-bottom: 0;
+  margin-top: 15px;
+  color: #73ba82;
+  /* border: 1px solid red; */
 }
 
-p {
+.subtitle {
   margin-bottom: 30px;
+  /* font-family: 'Paytone One'; */
+  font-size: 1em;
+  font-style: italic;
+  margin-top: 3px;
 }
 
 button {
@@ -71,3 +86,7 @@ button:focus-visible {
   }
 
 }  */
+
+/* * {
+  border: 1px solid fuchsia;
+} */

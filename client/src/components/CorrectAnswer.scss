@@ -6,18 +6,48 @@
     display: block;
 }
 
-.correct {
-    display: block;
-    color: green;
-}
-
-.incorrect {
-    display: block;
-    color: red;
-}
-
 img {
     width: 440px;
     height: 330px;
     object-fit: cover;
+}
+
+.answer-card p {
+    margin: 0;
+}
+
+.correct {
+    display: inline;
+    color: #73ba82;
+}
+
+.incorrect {
+    display: block;
+    color: #de5072;
+}
+
+.answer-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.green {
+    filter: invert(68%) sepia(11%) saturate(1288%) hue-rotate(80deg) brightness(96%) contrast(90%);
+}
+
+.red {
+    filter: invert(41%) sepia(77%) saturate(727%) hue-rotate(302deg) brightness(91%) contrast(90%);
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+
+.your-score {
+    font-size: 0.9em;
 }

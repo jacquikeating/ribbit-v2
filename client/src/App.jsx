@@ -24,9 +24,13 @@ function App() {
   return (
     <>
       <div className="content">
-        <img src="./assets/frog-icon.svg" alt="Simple icon of a frog" className="frog-icon" />
-        <h1>Ribbit</h1>
-        <p>Test your frog knowledge!</p>
+        <header>
+          <img src="./assets/frog-icon.svg" alt="Simple icon of a frog" className="frog-icon" />
+          <div className="text">          
+            <h1>Ribbit</h1>
+            <p className="subtitle">Test your frog knowledge!</p>
+          </div>
+        </header>
         <MultipleChoice frogSounds={frogSounds}/>
       </div>
     </>

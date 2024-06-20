@@ -8,16 +8,22 @@ export const MultipleChoice = ({ frogSounds }) => {
     const [currentFrog, setCurrentFrog] = useState(frogSounds[0])
     const [correctAnswer, setCorrectAnswer] = useState(' ')
     const [showAnswer, setShowAnswer] = useState(false)
+    const [totalGuesses, setTotalGuesses] = useState(0)
+    const [correctGuesses, setCorrectGuesses] = useState(0)
 
     function checkAnswer(event) {
         console.log(`Clicked ${event.target.id}. Correct answer is ${currentFrog.species}, with id ${currentFrog.id}`)
+        setTotalGuesses(totalGuesses + 1)
+        console.log(`Frogs guessed: ${totalGuesses}`)
         if (event.target.id == currentFrog.id) {
             setCorrectAnswer("true")
             setShowAnswer(true)
+            setCorrectGuesses(correctGuesses + 1)
         } else {
             setCorrectAnswer("false")
             setShowAnswer(true)
         }
+        console.log(`Correct: ${correctGuesses} / ${totalGuesses}`)
     }
 
     function nextFrog() {
@@ -56,23 +62,29 @@ export const MultipleChoice = ({ frogSounds }) => {
     //     }
     // }
 
-    function correctOrIncorrect() {
-        if (correctAnswer === "true") {
-            return (
-                <div className="result">
-                    <img src="../assets/check-icon.svg" className="answer-icon green" />
-                    <h2 className="correct">Correct!</h2>
-                </div>
-            ) 
-        } else if (correctAnswer === "false") {
-            return (
-                <div className="result">
-                    <img src="../assets/x-icon.svg" className="answer-icon red" />
-                    <h2 className="incorrect">Incorrect</h2>
-                </div>
-            ) 
-        }
-    }
+    // function correctOrIncorrect() {
+    //     if (correctAnswer === "true") {
+    //         return (
+    //             <>
+    //                 <div className="result">
+    //                     <img src="../assets/check-icon.svg" className="answer-icon green" />
+    //                     <h2 className="correct">Correct!</h2>
+    //             </div>
+    //             <p>Your score: {correctGuesses} / {totalGuesses}</p>
+    //             </>
+    //         ) 
+    //     } else if (correctAnswer === "false") {
+    //         return (
+    //             <>
+    //              <div className="result">
+    //                 <img src="../assets/x-icon.svg" className="answer-icon red" />
+    //                 <h2 className="incorrect">Incorrect</h2>
+    //             </div>
+    //             <p>Your score: {correctGuesses} / {totalGuesses}</p>
+    //             </>
+    //         ) 
+    //     }
+    // }
 
   return (
     <div>
@@ -127,11 +139,11 @@ export const MultipleChoice = ({ frogSounds }) => {
             </div>
         </div>
 
-        {correctOrIncorrect()}
-       
+        {/* {correctOrIncorrect()} */}
+        <CorrectAnswer currentFrog={currentFrog} showAnswer={showAnswer} correctAnswer={correctAnswer} correctGuesses={correctGuesses} totalGuesses={totalGuesses} />
+
         <button onClick={nextFrog}>Next</button> {/* If onClick is nextFrog, will go through in array order. If randomFrog, will go in random order. */}
 
-        <CorrectAnswer currentFrog={currentFrog} showAnswer={showAnswer} correctAnswer={correctAnswer} />
     </div>
   )
 }
