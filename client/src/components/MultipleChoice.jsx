@@ -54,38 +54,6 @@ export const MultipleChoice = ({ frogSounds }) => {
         setCorrectAnswer(' ')
     }
 
-    // function correctOrIncorrect() {
-    //     if (correctAnswer === "true") {
-    //         return <h2 className="correct">Correct!</h2>
-    //     } else if (correctAnswer === "false") {
-    //         return <h2 className="incorrect">Incorrect</h2>
-    //     }
-    // }
-
-    // function correctOrIncorrect() {
-    //     if (correctAnswer === "true") {
-    //         return (
-    //             <>
-    //                 <div className="result">
-    //                     <img src="../assets/check-icon.svg" className="answer-icon green" />
-    //                     <h2 className="correct">Correct!</h2>
-    //             </div>
-    //             <p>Your score: {correctGuesses} / {totalGuesses}</p>
-    //             </>
-    //         ) 
-    //     } else if (correctAnswer === "false") {
-    //         return (
-    //             <>
-    //              <div className="result">
-    //                 <img src="../assets/x-icon.svg" className="answer-icon red" />
-    //                 <h2 className="incorrect">Incorrect</h2>
-    //             </div>
-    //             <p>Your score: {correctGuesses} / {totalGuesses}</p>
-    //             </>
-    //         ) 
-    //     }
-    // }
-
   return (
     <div>
         <AudioPlayer currentFrog={currentFrog} />
@@ -139,7 +107,6 @@ export const MultipleChoice = ({ frogSounds }) => {
             </div>
         </div>
 
-        {/* {correctOrIncorrect()} */}
         <CorrectAnswer currentFrog={currentFrog} showAnswer={showAnswer} correctAnswer={correctAnswer} correctGuesses={correctGuesses} totalGuesses={totalGuesses} />
 
         <button onClick={nextFrog}>Next</button> {/* If onClick is nextFrog, will go through in array order. If randomFrog, will go in random order. */}
