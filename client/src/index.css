@@ -76,17 +76,17 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-/* @media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #ffffff;
+    background-color: whitesmoke;
   }
   a:hover {
     color: #747bff;
   }
 
-}  */
+  .rhap_time {
+    color: #213547!important;
+  }
 
-/* * {
-  border: 1px solid fuchsia;
-} */
+}
